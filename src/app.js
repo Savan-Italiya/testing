@@ -180,5 +180,5 @@ app.get("/v2/auth/is_logged_in", async (req, res) => {
 
 // sever port listener
 app.listen(process.env.SERVER_PORT, "0.0.0.0", () => {
-   console.log("server is start");
+   console.log("server is start", process.env.SERVER_PORT);
 });
